@@ -1,17 +1,17 @@
-ALTER TABLE `role`
-    ADD is_deleted BIT(1) NULL;
+ ALTER TABLE `role`
+    ADD is_deleted BIT(1) NULL DEFAULT FALSE;
 
 ALTER TABLE `role`
-    MODIFY is_deleted BIT(1) NOT NULL;
+    MODIFY is_deleted BIT (1) NOT NULL DEFAULT FALSE;
 
 ALTER TABLE token
-    ADD is_deleted BIT(1) NULL;
+    ADD is_deleted BIT(1) NULL DEFAULT FALSE;
 
 ALTER TABLE token
-    MODIFY is_deleted BIT(1) NOT NULL;
+    MODIFY is_deleted BIT (1) NOT NULL DEFAULT FALSE;
 
 ALTER TABLE user
-    ADD is_deleted BIT(1) NULL;
+    ADD is_deleted BIT(1) NULL DEFAULT FALSE;
 
 ALTER TABLE user
-    MODIFY is_deleted BIT(1) NOT NULL;
+    MODIFY is_deleted BIT (1) NOT NULL DEFAULT FALSE;
